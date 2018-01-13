@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="styles.css" >
+    <title>Comet Server - Пример php чата</title>
+    <script language="JavaScript" type="text/javascript" src="https://comet-server.ru/template/Profitable_site/js/jquery-2.0.3.min.js" ></script>
+    <script language="JavaScript" type="text/javascript" src="https://comet-server.ru/CometServerApi.js" ></script>
+    </head>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<body background=http://333v.ru/uploads/61/616834ff3f17a9f62475892a3df8f6df.jpg>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+         <h1 class="display-3" id="jumbo">JumboTron </h1>
+          <p class="lead">Space Dandy inc corparated</p>
+        </div>
+    </div> 
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"> <img src="https://riba-riba.ru/upload/forum/avatar/d6f/d6f00314b9aad91ae10a57b295324db6.gif"></th>
+            <th scope="col"><H2>(adm) Елена Волк ★</H2></th>
+            <th scope="col" id="I"><H1>Важные</H1></th>
+            <th scope="col"id="I"><H1>Опросы</H1></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"></th>
+            <td> Ребята, кто едет в Команду?<div class="btn-group">
+                <button type="button" class="btn btn-succes">Выберете ответ:</button>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Да, я еду</a>
+                  <a class="dropdown-item" href="#">Нет, не смогу</a>
+                  <a class="dropdown-item" href="#">Пока думаю</a>
+                </div>
+              </div>  </td>
+            <td><H2>Елена Волк:</H2>
+                Ребята, кто едет в Команду? </td>
+            <td><table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Елена Волк: Ребята...</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Да,...</th>
+                        <td>Нет,...</td>
+                        <td>Пока...</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Андрей...</th>
+                        <td>Ля-Ци</td>
+                        <td>Ри-сти...</td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="http://statistika.ru/forum/image.php?s=96321386c148ef327f113202eb960f47&u=7661&dateline=1507549511"></th>
+            <td><H2>Тёмный лорд228</H2></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Ребята, кто хочет стать пожирателем смерти?<div class="btn-group">
+                    <button type="button" class="btn btn-succes">Выберете ответ:</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Уже</a>
+                      <a class="dropdown-item" href="#">Всегда готов</a>
+                      <a class="dropdown-item" href="#">Трудно отказать, да</a>
+                    </div>
+                  </div></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm"> <div class="col-sm"> <div id="WebChatFormForm" ></div> 
+          <textarea id = "WebChatTextID" placeholder = "Type your message here..." ></textarea><br>
+       
+          <input type="button" onclick="web_send_msg();" value="Отправить" >
+          </div>
+        </div>
+      </div>
+    </body> 
+</html>
