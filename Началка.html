@@ -9,22 +9,25 @@
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE=QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
             <script src="http://code.gijgo.com/1.6.1/js/gijgo.js" type="text/javascript"></script>
             <link href="http://code.gijgo.com/1.6.1/css/gijgo.css" rel="stylesheet" type="text/css" />
+            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    
-    <!--font-awesome-->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <!--load everything font awesome-->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <style> 
  
-header {
+ header {
     text-align: justify;
-    height: 8em;
-    padding: 2em 5%;
+    height: 6em;
+    padding: 0.5em 5%;
     background: #2c3e50;
-    color: #fff;
 }
  
 header::after {
@@ -96,6 +99,10 @@ header nav a:last-child {
     }
      
 }
+table {border: 2px solid rgb(0, 0, 0);} 
+#shv{
+  color: white;
+}
 #vashi{
     color: #2c3e50;
 }
@@ -166,15 +173,14 @@ header nav a:last-child {
     table{
 margin-top: 20px;
 }
-   TD, TH {
-    padding: 3px; /* Поля вокруг содержимого таблицы */
-    border: 2px solid black; /* Параметры рамки */
-   }
+#vihod{
+    margin-top: 15px;
+}
 </style>
  </head>
-<body> <header id="header">
-    <h1>Tender</h1>
-     <nav id="header h1"><a>Space</a><a>Dandy</a><a><button type="button" class="btn btn-link">Выйти</button></a></nav>
+<body> 
+    <header id="header"><h1  id="shv">Tender</h1>
+    <nav id="header h1"><a id="shv">Здравствуйте, Дмитрий Широков</a></nav><button type="button" class="btn btn-link" id="vihod">Выйти</button>
                     <div class="container">
                         <div class="row">
                           <div class="col-sm">
@@ -249,7 +255,7 @@ margin-top: 20px;
                     <td >5</td>
                   </tr>
                   <tr>
-                    <th scope="row"id="table-bordered">6</th>
+                    <th scope="row">6</th>
                     <td >7</td>
                     <td >8</td>
                     <td >9</td>
@@ -259,7 +265,7 @@ margin-top: 20px;
                  
                   </tr>
                   <tr>
-                    <th scope="row"id="table-bordered">13</th>
+                    <th scope="row">13</th>
                     <td >14</td>
                     <td >15</td>
                     <td >16</td>
@@ -269,7 +275,7 @@ margin-top: 20px;
                  
                   </tr>
                   <tr>
-                    <th scope="row"id="table-bordered">20</th>
+                    <th scope="row">20</th>
                     <td >21</td>
                     <td >22</td>
                     <td >23</td>
@@ -277,7 +283,7 @@ margin-top: 20px;
                     <td >25</td>
                     <td >26</td>
                   </tr>
-                  <th scope="row"id="table-bordered">27</th>
+                  <th scope="row">27</th>
                   <td >28</td>
                   <td >29</td>
                   <td >30</td>
@@ -285,9 +291,9 @@ margin-top: 20px;
                 </table>
                 
                 
-                      <div class="container" id="vashi"> <h1>Ваши события:</h1>
+                      <div class="container" id="vashi"> <h3>Ваши события:</h3>
                         <p> Хеловин</p>
-                        <p>Туса</p>
+                        <p>Туса</p>                         
                         </div>
                     </body>
                     </html>
