@@ -301,9 +301,14 @@ margin-top: 20px;
                 </table>
                 
                 
-                      <div class="container" id="vashi"> <h3>Ваши события:</h3>
-                        <p> Хеловин</p>
-                        <p>Туса</p>                         
-                        </div>
+{% if Event_list %}
+                <ul>
+                    {% for events in Event_list %}
+                        <li><a href="/Events/{{ Event.id }}/">{{ Event.Event_text }}</a></li>
+                    {% endfor %}
+                  </ul>
+                  {% else %}
+                      <p>У вас нет событий</p>
+                  {% endif %}
                     </body>
                     </html>
