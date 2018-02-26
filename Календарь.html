@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+            <title>Tender</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+            <link rel="stylesheet" type="text/css" href="styles.css" >
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+         <!--load everything font awesome-->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+ </head>
+<body> 
+  <header id="header"><h1 id="shv">{{ Tender_title }}</h1>
+    <nav id="header h1"> 
+    <a href="http://skoda-express.ru/#" class="btn btn-md btn-default">{{ Tender_tittle }}</a> 
+    <a href="http://skoda-express.ru/#" class="btn btn-md btn-default">{{ Create_new_event }}</a> 
+    <a href="http://skoda-express.ru/#" class="btn btn-md btn-default">{{ Create_new_task }}</a> 
+    <a href="http://skoda-express.ru/#" class="btn btn-md btn-default">{{ participants_of_sovet }}</a> 
+    <a id="zdravstvyite">Здравствуйте,{{ User_login }}</a>
+    <button type="button" class="btn btn-link-danger">{{ User_logout }}</button>
+</nav>
+    </header>
+  <div class="container">
+      <div class="row">
+        <div class="col-sm" id="buttons">
+          <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary">{{ last_month }}</button>
+                <button type="button" class="btn btn-primary">{{ cur_month }}</button>
+                <button type="button" class="btn btn-secondary">{{ next_month }}</button>
+              </div>
+        </div>
+        </div>
+        <div class="col-sm"><form action="" method="post" id="search">
+            <input type="text" value="поиск" onblur="if(this.value=='') this.value='поиск';" onfocus="if(this.value=='поиск') this.value='';" class="input" />
+            <input type="submit" value="🔍" class="submit" />
+          </form> 
+        </div>
+        <div class="col-sm">
+    </div>
+    
+<table class="table table-bordered" id="table">
+
+<tr>
+  <th scope="col">Понедельник</th>
+  <th scope="col" >Вторник</th>
+  <th scope="col" >Среда</th>
+  <th scope="col" >Четверг</th>
+  <th scope="col" >Пятница</th>
+  <th scope="col" >Суббота</th>
+  <th scope="col" >Воскресенье</th>
+</tr>
+
+<tbody>
+<tr>
+<th scope="row" >30</th>
+  <td >31</td>
+  <td >1</td>
+  <td >2</td>
+  <td >3</td>
+  <td >4</td>
+  <td >5</td>
+</tr>
+<tr>
+  <th scope="row">6</th>
+  <td >7</td>
+  <td >8</td>
+  <td >9</td>
+  <td >10</td>
+  <td >11</td>
+  <td >12</td>
+
+</tr>
+<tr>
+  <th scope="row">13</th>
+  <td >14</td>
+  <td >15</td>
+  <td >16</td>
+  <td >17</td>
+  <td >18</td>
+  <td >19</td>
+
+</tr>
+<tr>
+  <th scope="row">20</th>
+  <td >21</td>
+  <td >22</td>
+  <td >23</td>
+  <td >24</td>
+  <td >25</td>
+  <td >26</td>
+</tr>
+<th scope="row">27</th>
+<td >28</td>
+<td >29</td>
+<td >30</td>
+</tbody> 
+</table>
+
+{% if Event_list %}
+<ul>
+  {% for events in Event_list %}
+      <li><a href="/Events/{{ Event.id }}/">{{ Event.Event_title }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+    <p>У вас нет событий</p>
+{% endif %}
+  </body>
+  </html>
