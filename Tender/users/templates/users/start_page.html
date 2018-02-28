@@ -1,301 +1,131 @@
-<html>
+<!doctype html>
+<html lang="ru">
     <head>
             <title>Tender</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <!-- Bootstrap CSS -->
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE=QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-            <script src="http://code.gijgo.com/1.6.1/js/gijgo.js" type="text/javascript"></script>
-            <link href="http://code.gijgo.com/1.6.1/css/gijgo.css" rel="stylesheet" type="text/css" />
-            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="styles.css" >
             <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-        <!--load everything font awesome-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+         <!--load everything font awesome-->
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <style> 
- 
- header {
-    text-align: justify;
-    height: 6em;
-    padding: 0.5em 5%;
-    background: #2c3e50;
-}
- 
-header::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
- 
-header > div,
-header > div::before,
-header nav,
-header > div h1 {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-}
- 
-header > div {
-    height: 100%;
-}
- 
-header > div::before {
-    content: '';
-    height: 100%;
-}
- 
-header > div h1 {
-    font-size: 3em;
-    font-style: italic;
-}
-header h1,
-header nav {
-    display: inline-block;
-    vertical-align: middle;
-}
- 
-header h1 {
-    width: 50%;
-    text-align: left;
-    padding-top: 0.5em;
-}
- 
-header nav {
-    padding-top: 1em;
-} 
-header nav a {
-    padding: 0 0.6em;
-    white-space: nowrap;
-}
- 
-header nav a:last-child {
-    padding-right: 0;
-}
- 
-@media screen and (max-width: 720px){
-     
-    header {
-        height: auto;
-    }
-     
-    header > div,
-    header > div h1,
-    header nav {
-        height: auto;
-        width: auto;
-        display: block;
-        text-align: center;
-    }
-     
-}
-table {border: 2px solid rgb(0, 0, 0);} 
-#shv{
-  color: white;
-}
-#vashi{
-    color: #2c3e50;
-}
-#sirch{
-    margin-left: 50px;
-    margin-bottom: 10%;
-}
-#search {
-  /* устанавливаем ширину формы,
-  ** равную ширине поля ввода (183 + 37 + 15)	*/
-  width: 235px;
-  height: 29px;
-}
-/* делаем инпуты плавающими, чтобы убрать лишние отступы,
-** и отключаем бордюры */
-#search input {
-  float: left;
-  border: none;
-}
-/* стили для поля ввода */
-#search .input {
-  width: 183px;
-  height: 28px;
-  /* внутренний отступ справа (37px) делаем больше левого,
-  ** т.к. там будет размещена кнопка отправки	*/
-  padding: 0 37px 1px 15px;
-  background: #EEE url(https://lh4.googleusercontent.com/-EllJnywnmlY/UAaKJYSYYMI/AAAAAAAABUU/IaRo-yUcRmc/s235/search.png) no-repeat;
-  color: #555;
-  font: 13px/28px Tahoma, Arial, sans-serif;
-  outline: none;
-}
-/* приходится использовать хак для FireFox
-** для вертикального выравнивания текста,
-** т.к. у него свои особые представления об этом */
-@-moz-document url-prefix() {
-  #search .input {
-    height: 27px;
-    padding-bottom: 2px;
-  }
-}
-/* меняем оформление поля ввода при фокусе */
-#search .input:focus {
-  background-color: #E8E8E8;
-  background-position: 0 -29px;
-  color: #333;
-}
-/* оформляем кнопку отправки */
-#search .submit {
-  width: 37px;
-  height: 29px;
-  cursor: pointer;
-  /* смещаем кнопку влево на собственную ширину,
-  ** чтобы она оказалась над полем ввода */
-  margin-left: -37px;
-  /* по-нормальному, здесь достаточно было бы указать background: none;
-  ** но приходится указывать фон из-за бага в IE */
-  background: url(dontexist.png);
-}
-</style>
-<style>
-    table{
-margin-top: 20px;
-}
-#vihod{
-    margin-top: 15px;
-}
-</style>
  </head>
-<body> 
-   <header id="header"><h1 id="shv">Tender</h1>
+<body>
+    <header id="header"><h1 id="shv">{{ Tender_title }}</h1>
     <nav id="header h1">
-                    <a class="btn btn-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Перейти в
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Календарь</a>
-                      <a class="dropdown-item" href="#">Создать новое событие</a>
-                    </div>
-                    <a id="zdravstvyite">Здравствуйте, Дмитрий Широков</a>
-                    <button type="button" class="btn btn-link">Выйти</button>
+    <a class="btn btn-primary mb-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Перейти в
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#">Календарь</a>
+      <a class="dropdown-item" href="#">Создать новое событие</a>
+    </div>
+    <a id="zdravstvyite">Здравствуйте,{{ User_login }}</a>
+    <button type="button" class="btn btn-link">Выйти</button>
 </nav>
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-sm">
-                            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                                <div class="btn-group mr-2" role="group" aria-label="First group">
-                                  <button type="button" class="btn btn-secondary">Сентябрь</button>
-                                  <button type="button" class="btn btn-secondary">Ноябрь</button>
-                                  <button type="button" class="btn btn-secondary">Декабрь</button>
-                                </div>
-                          </div>
-                          <div class="col-sm">
-                            
-                          </div>
-                          <div class="col-sm">
-                      </div>
-                      <form action="" method="post" id="search">
-                        <input type="text" name="" value="поиск" onblur="if(this.value=='') this.value='поиск';" onfocus="if(this.value=='поиск') this.value='';" class="input" />
-                        <input type="submit" name="" value="🔍" class="submit" />
-                      </form>
-                <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col">Понедельник</th>
-                    <th scope="col" >Вторник</th>
-                    <th scope="col" >Среда</th>
-                    <th scope="col" >Четверг</th>
-                    <th scope="col" >Пятница</th>
-                    <th scope="col" >Суббота</th>
-                    <th scope="col" >Воскресенье</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <th scope="row" >30</th>
-                    <td >31</td>
-                    <td >1     
-                      <button type="button" class="btn btn-success" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        </button>
-                        <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Хеловин</a>
-                                <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Где: В школе</a>
-                          <a class="dropdown-item" href="#">Время: 16.00</a>
-                          <a class="dropdown-item" href="#">Принести себя трезвым</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Перейти в беседу🠖</a>
-                        </div>
-                    </td>
-                    <td >2</td>
-                    <td >3        
-                            <button type="button" class="btn btn-success" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        </button>
-                        <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Туса</a>
-                          <a class="dropdown-item" href="#">Где: У Тихона</a>
-                          <a class="dropdown-item" href="#">Время: 16.00</a>
-                          <a class="dropdown-item" href="#">Принести поесть</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Перейти в беседу🠖</a>
-                        </div>
-                        <button type="button" class="btn btn-warning" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            </button>
-                            <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Туса</a>
-                              <a class="dropdown-item" href="#">Где: У Тихона</a>
-                              <a class="dropdown-item" href="#">Время: 16.00</a>
-                              <a class="dropdown-item" href="#">Принести поесть</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Перейти в беседу🠖</a>
-                            </div>
-                    </td>
-                    <td >4</td>
-                    <td >5</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td >7</td>
-                    <td >8</td>
-                    <td >9</td>
-                    <td >10</td>
-                    <td >11</td>
-                    <td >12</td>
-                 
-                  </tr>
-                  <tr>
-                    <th scope="row">13</th>
-                    <td >14</td>
-                    <td >15</td>
-                    <td >16</td>
-                    <td >17</td>
-                    <td >18</td>
-                    <td >19</td>
-                 
-                  </tr>
-                  <tr>
-                    <th scope="row">20</th>
-                    <td >21</td>
-                    <td >22</td>
-                    <td >23</td>
-                    <td >24</td>
-                    <td >25</td>
-                    <td >26</td>
-                  </tr>
-                  <th scope="row">27</th>
-                  <td >28</td>
-                  <td >29</td>
-                  <td >30</td>
-                </tbody> 
-                </table>
-                
-                
-                      <div class="container" id="vashi"> <h3>Ваши события:</h3>
-                        <p> Хеловин</p>
-                        <p>Туса</p>                         
-                        </div>
-                    </body>
-                    </html>
+    </header>
+  <div class="container">
+      <div class="row">
+        <div class="col-sm" id="buttons">
+          <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary">{{ last_month }}</button>
+                <button type="button" class="btn btn-primary">{{ cur_month }}</button>
+                <button type="button" class="btn btn-secondary">{{ next_month }}</button>
+              </div>
+        </div>
+        </div>
+        <div class="col-sm"><form action="" method="post" id="search">
+            <input type="text" value="поиск" onblur="if(this.value=='') this.value='поиск';" onfocus="if(this.value=='поиск') this.value='';" class="input" />
+            <input type="submit" value="🔍" class="submit" />
+          </form>
+        </div>
+        <div class="col-sm">
+    </div>
+
+<table class="table table-bordered" id="table">
+
+<tr>
+  <th scope="col">Понедельник</th>
+  <th scope="col" >Вторник</th>
+  <th scope="col" >Среда</th>
+  <th scope="col" >Четверг</th>
+  <th scope="col" >Пятница</th>
+  <th scope="col" >Суббота</th>
+  <th scope="col" >Воскресенье</th>
+</tr>
+
+<tbody>
+<tr>
+<th scope="row" >30</th>
+  <td >31</td>
+  <td >1</td>
+  <td >2</td>
+  <td >3</td>
+  <td >4</td>
+  <td >5
+
+      <button class="btn btn-primary" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          </button>
+      <div class="dropdown-menu" aria-labelledby="triggerId">
+        <button class="dropdown-item" href="#">Action</button>
+        <button class="dropdown-item disabled" href="#">Disabled action</button>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <th scope="row">6</th>
+  <td >7</td>
+  <td >8</td>
+  <td >9</td>
+  <td >10</td>
+  <td >11</td>
+  <td >12</td>
+
+</tr>
+<tr>
+  <th scope="row">13</th>
+  <td >14</td>
+  <td >15</td>
+  <td >16</td>
+  <td >17</td>
+  <td >18</td>
+  <td >19</td>
+
+</tr>
+<tr>
+  <th scope="row">20</th>
+  <td >21</td>
+  <td >22</td>
+  <td >23</td>
+  <td >24</td>
+  <td >25</td>
+  <td >26</td>
+</tr>
+<th scope="row">27</th>
+<td >28</td>
+<td >29</td>
+<td >30</td>
+</tbody>
+</table>
+
+{% if Event_list %}
+<ul>
+  {% for events in Event_list %}
+      <li><a href="/Events/{{ Event.id }}/">{{ Event.Event_title }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+    <p>У вас нет событий</p>
+{% endif %}
+  </body>
+  </html>
