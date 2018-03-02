@@ -1,0 +1,164 @@
+/*Календарь*/
+header {
+    text-align: justify;
+    height: 6em;
+    padding: 0.5em 5%;
+    background: #2c3e50;
+}
+ 
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}   
+header > div::before {
+    content: '';
+    height: 100%;
+}
+header h1,
+header nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+header h1 {
+    padding-top: 0.5em;
+}
+ 
+header nav a:last-child {
+    padding-right: 0;
+}
+@media screen and (max-width: 720px){
+     
+    header {
+        height: auto;
+    }
+     
+    header > div,
+    header > div h1,
+    header nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+     
+}
+table {border: 2px solid rgb(0, 0, 0);} 
+#shv{
+  color: white;
+  margin-bottom: 1em;
+}
+#vashi{
+    color: #2c3e50;
+}
+#sirch{
+    margin-left: 50px;
+    margin-bottom: 10%;
+}
+#search {
+  /* устанавливаем ширину формы,
+  ** равную ширине поля ввода (183 + 37 + 15)	*/
+  width: 235px;
+  height: 29px;
+}
+
+/* делаем инпуты плавающими, чтобы убрать лишние отступы,
+** и отключаем бордюры */
+#search input {
+  float: left;
+  border: none;
+}
+
+/* стили для поля ввода */
+#search .input {
+  width: 183px;
+  height: 28px;
+  /* внутренний отступ справа (37px) делаем больше левого,
+  ** т.к. там будет размещена кнопка отправки	*/
+  padding: 0 37px 1px 15px;
+  background: #EEE url(https://lh4.googleusercontent.com/-EllJnywnmlY/UAaKJYSYYMI/AAAAAAAABUU/IaRo-yUcRmc/s235/search.png) no-repeat;
+  color: #555;
+  font: 13px/28px Tahoma, Arial, sans-serif;
+  outline: none;
+}
+
+/* приходится использовать хак для FireFox
+** для вертикального выравнивания текста,
+** т.к. у него свои особые представления об этом */
+@-moz-document url-prefix() {
+  #search .input {
+    height: 27px;
+    padding-bottom: 2px;
+  }
+}
+
+/* меняем оформление поля ввода при фокусе */
+#search .input:focus {
+  background-color: #E8E8E8;
+  background-position: 0 -29px;
+  color: #333;
+}
+
+/* оформляем кнопку отправки */
+#search .submit {
+  width: 37px;
+  height: 29px;
+  cursor: pointer;
+
+  /* смещаем кнопку влево на собственную ширину,
+  ** чтобы она оказалась над полем ввода */
+  margin-left: -37px;
+
+  /* по-нормальному, здесь достаточно было бы указать background: none;
+  ** но приходится указывать фон из-за бага в IE */
+  background: url(dontexist.png);
+}
+    #zdravstvyite{
+        color: white;
+    }
+   #table{
+margin-top: 1em;
+}
+#search{
+  margin-top: 1.5rem;
+}
+#vihod{
+    margin-top: 15px;
+}
+#buttons{
+  margin-top: 1rem;
+}
+#shapka{
+ color: white;
+ }
+ #event{
+     height: 2.25em;
+ }
+ #form{
+     margin-top: 10px;
+}
+ #timepicker{
+margin-bottom: 5px;
+ }
+ #taime{
+     margin-top: 20px;
+ }
+ #form{
+    margin-top: 1rem;
+}
+#formA{
+   height: 2.5em;
+    width: 20em;
+    margin-top: 1rem;
+}
+#sohr{
+    margin-left: 1rem;
+}
+#event{
+    height: 2.5em;
+    width: 20em;
+}
+#text{
+    margin-top: 1rem;
+}
