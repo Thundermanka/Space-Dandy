@@ -27,14 +27,14 @@
       <button type="button" class="btn btn-link-danger">{{ User_logout }}</button>
   </nav>
       </header>
-    {% if User_list %}
-    <ul>
-      {% for users in User_list %}
-          <li><a href="{{ Users.id }}/">{{ User_name }}</a></li>
-      {% endfor %}
-    </ul>
-    {% else %}
-        <p>Нет людей</p>
-    {% endif %}
-  </body>
-  </html>
+      {% if Event_list %}
+      <ul>
+        {% for eventss in Event_list %}
+            <li><a href="{{ Events.id }}/">{{ Event_name }}</a></li>
+        {% endfor %}
+      </ul>
+      {% else %}
+          <p>Нет событий</p>
+      {% endif %}
+    </body>
+    </html>
